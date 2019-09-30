@@ -4,12 +4,12 @@
         "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\383837a1f189d10df3511e6927171459\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\383837a1f189d10df3511e6927171459\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\383837a1f189d10df3511e6927171459\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\383837a1f189d10df3511e6927171459\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_design_ic_visibility.png.flat",
@@ -20,12 +20,16 @@
         "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\383837a1f189d10df3511e6927171459\\appcompat-1.1.0\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_text_light.xml.flat",
+        "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\8eb866707b690ca0a19e0e3fe5cc8413\\play-services-base-17.1.0\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
         "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\383837a1f189d10df3511e6927171459\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_text_light.xml.flat",
-        "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\8eb866707b690ca0a19e0e3fe5cc8413\\play-services-base-17.1.0\\res\\color\\common_google_signin_btn_text_light.xml"
+        "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_place_details.xml.flat",
+        "source": "D:\\clinnect1\\clinnect1\\app\\src\\main\\res\\layout\\activity_place_details.xml"
     },
     {
         "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
@@ -84,12 +88,12 @@
         "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\383837a1f189d10df3511e6927171459\\appcompat-1.1.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_dark.xml.flat",
-        "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\383837a1f189d10df3511e6927171459\\appcompat-1.1.0\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
         "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_light_focused.xml.flat",
         "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\8eb866707b690ca0a19e0e3fe5cc8413\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_dark.xml.flat",
+        "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\383837a1f189d10df3511e6927171459\\appcompat-1.1.0\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
         "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -212,12 +216,12 @@
         "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\383837a1f189d10df3511e6927171459\\appcompat-1.1.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu.xml.flat",
-        "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\314e78ee411997f535ea385b0dca3a47\\material-1.0.0\\res\\layout\\design_navigation_menu.xml"
-    },
-    {
         "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\0136ca65841c199e13145e51c5d77d51\\core-1.1.0\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu.xml.flat",
+        "source": "C:\\Users\\91932\\.gradle\\caches\\transforms-2\\files-2.1\\314e78ee411997f535ea385b0dca3a47\\material-1.0.0\\res\\layout\\design_navigation_menu.xml"
     },
     {
         "merged": "D:\\clinnect1\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",

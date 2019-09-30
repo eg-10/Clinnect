@@ -26,6 +26,7 @@ import com.google.android.gms.maps.model.Circle;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.libraries.places.api.Places;
 import com.google.android.libraries.places.api.model.Place;
@@ -39,7 +40,7 @@ import org.json.JSONObject;
 
 import java.util.Arrays;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnInfoWindowClickListener {
 
     private GoogleMap mMap;
 
@@ -97,6 +98,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         } catch (Resources.NotFoundException e) {
             Log.e(TAG, "Can't find style. Error: ", e);
         }
+        mMap.setOnInfoWindowClickListener(this);
         mMap.clear();
         loadPlacesAutocomplete();
         // Add a marker in Mumbai and move the camera
@@ -113,9 +115,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 //                .fillColor(Color.parseColor("#2271cce7")));
         setPlaceMarker(start, start_name);
         results = new JSONArray();
-        setNearbyPlacesArray(start.latitude, start.longitude, "hospital");
+        setNearbyPlacesArray(start.latitude, start.longitude, "hospital", "hospital");
         mMap.moveCamera(CameraUpdateFactory.newLatLng(start));
         mMap.moveCamera(CameraUpdateFactory.zoomTo(14.0f));
+    }
+
+    @Override
+    public void onInfoWindowClick(Marker marker) {
+        Toast.makeText(this, "Info window clicked",
+                Toast.LENGTH_SHORT).show();
+        Log.i(TAG, "Info window clicked!");
+        String placeID = (String) marker.getTag();
+        if (placeID != null) {
+            Log.i(TAG, "Place_id = " + marker.getTag());
+            Intent intent = new Intent(this, PlaceDetails.class);
+            intent.putExtra("placeID", placeID);
+            startActivity(intent);
+        }
+        else {
+            Log.i(TAG, "No place id!");
+        }
     }
 
     private void loadPlacesAutocomplete(){
@@ -147,25 +166,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Log.e(TAG, "Lat lng:" + place.getLatLng().latitude);
                 setPlaceMarker(place.getLatLng(), place.getName());
                 results = new JSONArray();
-                setNearbyPlacesArray(place.getLatLng().latitude, place.getLatLng().longitude, "hospital");
+                setNearbyPlacesArray(place.getLatLng().latitude, place.getLatLng().longitude, "hospital", "hospital");
+//                setNearbyPlacesArray(place.getLatLng().latitude, place.getLatLng().longitude, "doctor", "clinic");
                 Log.i(TAG, "Place: " + place.getName() + ", " + place.getId());
             }
 
             @Override
             public void onError(Status status) {
-                // TODO: Handle the error.
                 Log.i(TAG, "An error occurred: " + status);
             }
         });
     }
 
-    private void setNearbyPlacesArray(double latitude, double longitude, String type){
+    private void setNearbyPlacesArray(double latitude, double longitude, String type, String keyword){
 
 
         String url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" +
                 "location=" + latitude + "," + longitude +
                 "&type=" + type +
-                "&keyword=" + type +
+                "&keyword=" + keyword +
                 "&rankby=distance" +
                 "&key=" + apiKey;
 
@@ -191,13 +210,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                                     double lat = results.getJSONObject(i).getJSONObject("geometry").getJSONObject("location").getDouble("lat");
                                     double lng = results.getJSONObject(i).getJSONObject("geometry").getJSONObject("location").getDouble("lng");
+                                    String placeID = results.getJSONObject(i).getString("place_id");
                                     LatLng latLng = new LatLng(lat,lng);
                                     String name = results.getJSONObject(i).getString("name");
-                                    setMarker(latLng, name);
+                                    setMarker(latLng, name, placeID);
                                 } catch (JSONException e){
 
                                     toast = Toast.makeText(getApplicationContext(),
-                                            "Error in retrieving nearby hospitals!",
+                                            "Error in retrieving nearby hospitals!inner",
                                             Toast.LENGTH_SHORT);
                                     toast.show();
                                 }
@@ -205,7 +225,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         } catch (JSONException e){
 
                             Toast toast = Toast.makeText(getApplicationContext(),
-                                    "Error in retrieving nearby hospitals!",
+                                    "Error in retrieving nearby hospitals!outer",
                                     Toast.LENGTH_SHORT);
                             toast.show();
                         }
@@ -233,7 +253,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .position(location)
                 .title(name)
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-        Circle circle = mMap.addCircle(new CircleOptions()
+        mMap.addCircle(new CircleOptions()
                 .center(location)
                 .radius(DEFAULT_RADIUS)
                 .strokeWidth(0)
@@ -244,12 +264,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.zoomTo(14.0f));
     }
 
-    private void setMarker(LatLng location, String name){
+    private void setMarker(LatLng location, String name, String placeID){
 
-        mMap.addMarker(new MarkerOptions()
+       Marker marker = mMap.addMarker(new MarkerOptions()
                 .position(location)
                 .title(name)
                 .icon(BitmapDescriptorFactory.defaultMarker()));
+       marker.setTag(placeID);
     }
 
 
