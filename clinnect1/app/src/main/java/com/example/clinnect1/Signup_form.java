@@ -16,11 +16,16 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Signup_form extends AppCompatActivity {
 
 
-    EditText emailId, password,confirmpassword;
+    EditText emailId, password,confirmpassword, namebox, agebox, sexbox,usernamebox;
     Button btn_register;
     private FirebaseAuth firebaseAuth;
 
@@ -29,7 +34,9 @@ public class Signup_form extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_form);
         getSupportActionBar().setTitle("Signup Form");
-
+        namebox = findViewById(R.id.namebox);
+        agebox = findViewById(R.id.agebox);
+        sexbox = findViewById(R.id.sexBox);
         emailId = findViewById(R.id.text1);
         password = findViewById(R.id.text2);
         confirmpassword = findViewById(R.id.text3);
@@ -76,6 +83,17 @@ public class Signup_form extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
 
                                     if (task.isSuccessful()) {
+                                        String name = namebox.getText().toString();
+                                        String age = agebox.getText().toString();
+                                        String sex = sexbox.getText().toString();
+                                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                                        String uid = firebaseAuth.getCurrentUser().getUid();
+                                        DatabaseReference curruser =  FirebaseDatabase.getInstance().getReference().child("users").child(uid);
+                                        Map map = new HashMap();
+                                        map.put("name",name);
+                                        map.put("age",age);
+                                        map.put("sex",sex);
+                                        curruser.setValue(map);
 
                                         startActivity(new Intent(getApplicationContext(),MainActivity.class));
                                         Toast.makeText(Signup_form.this, "Registration Complete", Toast.LENGTH_SHORT).show();

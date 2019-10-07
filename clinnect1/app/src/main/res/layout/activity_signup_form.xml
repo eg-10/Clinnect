@@ -11,8 +11,8 @@
     tools:context="com.example.clinnect1.Signup_form">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_width="337dp"
+        android:layout_height="210dp"
 
         />
 
@@ -32,9 +32,66 @@
         <EditText
             android:id="@+id/text1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:ems="10"
             android:hint="Enter Email"
+            android:inputType="text"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="5dp"
+
+        >
+
+        <EditText
+            android:id="@+id/namebox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Enter Name"
+            android:inputType="text"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="5dp"
+
+        >
+
+        <EditText
+            android:id="@+id/agebox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Enter Age"
+            android:inputType="text"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginTop="5dp"
+
+        >
+
+        <EditText
+            android:id="@+id/sexBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Enter Sex"
             android:inputType="text"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -51,7 +108,7 @@
         <EditText
             android:id="@+id/text2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:ems="10"
             android:hint="Enter Password"
             android:inputType="textPassword"
@@ -71,7 +128,7 @@
         <EditText
             android:id="@+id/text3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:ems="10"
             android:hint="Confirm Password"
             android:inputType="textPassword"
@@ -81,12 +138,11 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="match_parent"
+        android:layout_width="348dp"
         android:layout_height="wrap_content"
-        android:text="REGISTER"
-        android:textSize="25sp"
         android:layout_marginTop="40dp"
         android:background="@drawable/button_rounded"
-        />
+        android:text="REGISTER"
+        android:textSize="25sp" />
 
 </LinearLayout>

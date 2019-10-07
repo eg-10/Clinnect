@@ -1,10 +1,14 @@
 package com.example.clinnect1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,33 +19,45 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.clinnect.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class PlaceDetails extends AppCompatActivity {
 
     private static final String TAG = "PlaceDetails";
-
+    private String customerid = "";
     private static final String apiKey = "AIzaSyBtiMxQ4SyLkAaHLyXofMt3CkQb8FiW_tk";
-
-
-
+    private RatingBar rbar;
+    private Button bookmarkBut;
+    FirebaseAuth mAuth;
+    DatabaseReference curruser, currplace, bookmark;
     public static JSONObject results;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_place_details);
-
+        rbar = findViewById(R.id.ratingBar);
+        bookmarkBut = findViewById(R.id.bookmark);
         final TextView title = findViewById(R.id.name);
         final TextView address = findViewById(R.id.address);
         final TextView phone = findViewById(R.id.phone);
         final TextView website = findViewById(R.id.website);
         final TextView rating = findViewById(R.id.rating);
+        customerid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         Intent intent = getIntent();
-        String placeID = intent.getStringExtra("placeID");
+        final String placeID = intent.getStringExtra("placeID");
         Log.i(TAG, "place id: " + placeID);
         String url = "https://maps.googleapis.com/maps/api/place/details/json?" +
                 "place_id=" + placeID +
@@ -89,7 +105,51 @@ public class PlaceDetails extends AppCompatActivity {
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(jsonObjectRequest);
+        currplace = FirebaseDatabase.getInstance().getReference().child("places").child(placeID).child("rating");
+        curruser = FirebaseDatabase.getInstance().getReference().child("users").child(customerid).child("places").child("ratings").child(placeID);
+        currplace.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists() && dataSnapshot.getChildrenCount()>0){
+                    float sum = 0;
+                    int count = 0;
+                    float avg;
+                    for(DataSnapshot child : dataSnapshot.getChildren()){
+                        sum = sum + Integer.valueOf(child.getValue().toString());
+                        count++;
+                    }
+                    avg = sum/count;
+                    if (avg!=0);
+                    rbar.setRating(avg);
+
+
+                }}
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        rbar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
+                curruser.setValue(v);
+                currplace.child(customerid).setValue(v);
+                rbar.setRating(v);
+            }
+        });
+        bookmarkBut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bookmark = FirebaseDatabase.getInstance().getReference().child("users").child(customerid).child("places").child("bookmarks");
+               /* Map<String, Object> map = new HashMap<>();
+                map.put("placeID", placeID);
+                bookmark.updateChildren(map);*/
+                bookmark.push().setValue(placeID);
+            }
+        });
     }
+
 
 //    private void setNearbyPlacesArray(double latitude, double longitude, String type, String keyword){
 //

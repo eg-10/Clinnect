@@ -3,6 +3,8 @@ package com.example.clinnect1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,11 +25,20 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String apiKey = "AIzaSyBtiMxQ4SyLkAaHLyXofMt3CkQb8FiW_tk";
     private static final String TAG = "MainActivity.java" ;
+    private Button userinfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        userinfo = (Button) findViewById(R.id.user);
+        userinfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),User.class));
+
+            }
+        });
 
         /*
          * Initialize Places. For simplicity, the API key is hard-coded. In a production
@@ -45,23 +56,34 @@ public class MainActivity extends AppCompatActivity {
         autocompleteFragment.setTypeFilter(TypeFilter.REGIONS);
         final Intent intent = new Intent(this, MapsActivity.class);
         autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
-            @Override
-            public void onPlaceSelected(Place place) {
-                Log.i(TAG, "Place:::::::: " + place.getName() + ", " + place.getId());
-                double lat = place.getLatLng().latitude;
-                double lng = place.getLatLng().longitude;
-                String name = place.getName();
-                intent.putExtra("lat",lat);
-                intent.putExtra("lng",lng);
-                intent.putExtra("name",name);
-                startActivity(intent);
+                                                            @Override
+                                                            public void onPlaceSelected(Place place) {
+                                                                Log.i(TAG, "Place:::::::: " + place.getName() + ", " + place.getId());
+                                                                double lat = place.getLatLng().latitude;
+                                                                double lng = place.getLatLng().longitude;
+                                                                String name = place.getName();
+                                                                intent.putExtra("lat",lat);
+                                                                intent.putExtra("lng",lng);
+                                                                intent.putExtra("name",name);
+                                                                startActivity(intent);
 
-            }
+                                                            }
 
-            @Override
-            public void onError(Status status) {
-                Log.i(TAG, "An error occurred: " + status);
-            }
-        });
+                                                            @Override
+                                                            public void onError(Status status) {
+                                                                Log.i(TAG, "An error occurred: " + status);
+                                                            }
+
+                                                        }
+        );
+
+    }
+    @Override
+    public void onBackPressed(){
+        Intent a = new Intent(Intent.ACTION_MAIN);
+        a.addCategory(Intent.CATEGORY_HOME);
+        a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(a);
+
     }
 }
