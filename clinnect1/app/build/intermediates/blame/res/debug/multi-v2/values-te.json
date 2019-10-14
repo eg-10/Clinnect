@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Hirani\\AndroidStudioProjects\\Clinnect\\clinnect1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-te\\values-te.xml",
+            "outputFile": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-te\\values-te.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Hirani\\.gradle\\caches\\transforms-2\\files-2.1\\c4c1bb85ff6061bc204dbb4aeaa5b887\\jetified-play-services-basement-17.0.0\\res\\values-te\\values.xml",

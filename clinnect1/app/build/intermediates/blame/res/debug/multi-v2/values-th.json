@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Hirani\\AndroidStudioProjects\\Clinnect\\clinnect1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-th\\values-th.xml",
+            "outputFile": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-th\\values-th.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Hirani\\.gradle\\caches\\transforms-2\\files-2.1\\553abd5d5b3dd6da156115f3d45aca53\\places-2.0.0\\res\\values-th\\values.xml",

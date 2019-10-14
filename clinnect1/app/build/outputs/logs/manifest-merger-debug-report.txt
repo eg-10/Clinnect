@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
+ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\314e78ee411997f535ea385b0dca3a47\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.libraries.places:places:2.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\553abd5d5b3dd6da156115f3d45aca53\places-2.0.0\AndroidManifest.xml:2:1-26:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\383837a1f189d10df3511e6927171459\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -68,25 +68,25 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Hirani\.gradl
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\942ae5bb408d75da4f7f89b1ab4a5794\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\3f7255e5c39577612d42757c6a1a973c\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\8e5501d68d01dce42031dc1b525c12ab\firebase-database-collection-17.0.0\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
-INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
 	package
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:3:5-35
-		INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
-		INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
+		INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
-		INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:1-56:12
+		INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:5:5-52:19
+ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:5:5-52:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\314e78ee411997f535ea385b0dca3a47\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\314e78ee411997f535ea385b0dca3a47\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.libraries.places:places:2.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\553abd5d5b3dd6da156115f3d45aca53\places-2.0.0\AndroidManifest.xml:13:5-24:19
@@ -154,73 +154,73 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Hi
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\0136ca65841c199e13145e51c5d77d51\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:11:9-40
 activity#com.example.clinnect1.User
-ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:12:9-72
+ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:12:9-72
 	android:name
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:12:19-60
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:12:19-60
 activity#com.example.clinnect1.PlaceDetails
-ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:13:9-71
+ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:13:9-71
 	android:name
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:13:19-68
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:13:19-68
 activity#com.example.clinnect1.Signup_form
-ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:14:9-70
+ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:14:9-70
 	android:name
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:14:19-67
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:14:19-67
 activity#com.example.clinnect1.Login_form
-ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:15:9-21:20
+ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:15:19-66
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:15:19-66
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:19:27-74
 activity#com.example.clinnect1.MainActivity
-ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:22:9-28:20
+ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:22:9-28:20
 	android:parentActivityName
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:24:13-74
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:24:13-74
 	android:name
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:23:13-62
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:23:13-62
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:25:13-27:59
+ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:25:13-27:59
 	android:value
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:27:17-56
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:27:17-56
 	android:name
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:26:17-62
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:26:17-62
 activity#com.example.clinnect1.MapsActivity
-ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:37:9-40:79
+ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:37:9-40:79
 	android:parentActivityName
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:40:13-76
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:40:13-76
 	android:label
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:39:13-56
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:39:13-56
 	android:name
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:38:13-62
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:38:13-62
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:54:5-79
+ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:54:5-79
 MERGED from [com.google.android.libraries.places:places:2.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\553abd5d5b3dd6da156115f3d45aca53\places-2.0.0\AndroidManifest.xml:9:5-79
 MERGED from [com.google.android.libraries.places:places:2.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\553abd5d5b3dd6da156115f3d45aca53\places-2.0.0\AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:54:22-76
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:54:22-76
 uses-sdk
-INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\314e78ee411997f535ea385b0dca3a47\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\314e78ee411997f535ea385b0dca3a47\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.libraries.places:places:2.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\553abd5d5b3dd6da156115f3d45aca53\places-2.0.0\AndroidManifest.xml:7:5-44
@@ -349,16 +349,16 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Hirani\.gradle\cach
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\3f7255e5c39577612d42757c6a1a973c\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\8e5501d68d01dce42031dc1b525c12ab\firebase-database-collection-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\8e5501d68d01dce42031dc1b525c12ab\firebase-database-collection-17.0.0\AndroidManifest.xml:5:5-44
-INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.google.android.libraries.places:places:2.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\553abd5d5b3dd6da156115f3d45aca53\places-2.0.0\AndroidManifest.xml:10:5-76
 	android:name

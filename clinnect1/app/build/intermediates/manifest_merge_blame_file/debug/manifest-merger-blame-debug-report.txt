@@ -6,13 +6,13 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="25"
-8-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+8-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
+9-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-11-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:54:5-79
-11-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:54:22-76
+11-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:54:5-79
+11-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:54:22-76
 12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 12-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\553abd5d5b3dd6da156115f3d45aca53\places-2.0.0\AndroidManifest.xml:10:5-76
 12-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\553abd5d5b3dd6da156115f3d45aca53\places-2.0.0\AndroidManifest.xml:10:22-73
@@ -42,58 +42,58 @@
 23-->[com.google.android.gms:play-services-measurement:17.2.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\fdc70b0b7960929853ff7c757beb7d4f\play-services-measurement-17.2.0\AndroidManifest.xml:26:22-107
 24
 25    <application
-25-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:5:5-52:19
+25-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:5:5-52:19
 26        android:allowBackup="true"
-26-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:6:9-35
+26-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:6:9-35
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 27-->[androidx.core:core:1.1.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\0136ca65841c199e13145e51c5d77d51\core-1.1.0\AndroidManifest.xml:24:18-86
 28        android:debuggable="true"
 29        android:icon="@mipmap/ic_launcher"
-29-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:7:9-43
+29-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:7:9-43
 30        android:label="@string/app_name"
-30-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:8:9-41
+30-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:8:9-41
 31        android:roundIcon="@mipmap/ic_launcher_round"
-31-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:9:9-54
+31-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:9:9-54
 32        android:supportsRtl="true"
-32-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:10:9-35
+32-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:10:9-35
 33        android:testOnly="true"
 34        android:theme="@style/AppTheme" >
-34-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:11:9-40
+34-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:11:9-40
 35        <activity android:name="com.example.clinnect1.User" />
-35-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:12:9-72
-35-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:12:19-60
+35-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:12:9-72
+35-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:12:19-60
 36        <activity android:name="com.example.clinnect1.PlaceDetails" />
-36-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:13:9-71
-36-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:13:19-68
+36-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:13:9-71
+36-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:13:19-68
 37        <activity android:name="com.example.clinnect1.Signup_form" />
-37-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:14:9-70
-37-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:14:19-67
+37-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:14:9-70
+37-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:14:19-67
 38        <activity android:name="com.example.clinnect1.Login_form" >
-38-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:15:9-21:20
-38-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:15:19-66
+38-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:15:9-21:20
+38-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:15:19-66
 39            <intent-filter>
-39-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:16:13-20:29
+39-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:16:13-20:29
 40                <action android:name="android.intent.action.MAIN" />
-40-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:17:17-69
-40-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:17:25-66
+40-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:17:17-69
+40-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:17:25-66
 41
 42                <category android:name="android.intent.category.LAUNCHER" />
-42-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:19:17-77
-42-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:19:27-74
+42-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:19:17-77
+42-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:19:27-74
 43            </intent-filter>
 44        </activity>
 45        <activity
-45-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:22:9-28:20
+45-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:22:9-28:20
 46            android:name="com.example.clinnect1.MainActivity"
-46-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:23:13-62
+46-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:23:13-62
 47            android:parentActivityName="com.example.clinnect1.Login_form" >
-47-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:24:13-74
+47-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:24:13-74
 48            <meta-data
-48-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:25:13-27:59
+48-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:25:13-27:59
 49                android:name="com.google.android.geo.API_KEY"
-49-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:26:17-62
+49-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:26:17-62
 50                android:value="@string/google_maps_key" />
-50-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:27:17-56
+50-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:27:17-56
 51        </activity>
 52        <!--
 53                 The API key for Google Maps-based APIs is defined as a string resource.
@@ -104,13 +104,13 @@
 58                 You can define the keys for the debug and release targets in src/debug/ and src/release/.
 59        -->
 60        <activity
-60-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:37:9-40:79
+60-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:37:9-40:79
 61            android:name="com.example.clinnect1.MapsActivity"
-61-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:38:13-62
+61-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:38:13-62
 62            android:label="@string/title_activity_maps"
-62-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:39:13-56
+62-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:39:13-56
 63            android:parentActivityName="com.example.clinnect1.MainActivity" />
-63-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:40:13-76
+63-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:40:13-76
 64        <!--
 65             The API key for Google Maps-based APIs is defined as a string resource.
 66             (See the file "res/values/google_maps_api.xml").
@@ -120,11 +120,11 @@
 70             You can define the keys for the debug and release targets in src/debug/ and src/release/.
 71        -->
 72        <meta-data
-72-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:25:13-27:59
+72-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:25:13-27:59
 73            android:name="com.google.android.geo.API_KEY"
-73-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:26:17-62
+73-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:26:17-62
 74            android:value="@string/google_maps_key" />
-74-->C:\Users\Hirani\AndroidStudioProjects\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:27:17-56
+74-->C:\Users\Hirani\Documents\GitHub\Clinnect\clinnect1\app\src\main\AndroidManifest.xml:27:17-56
 75        <!-- Autocomplete -->
 76        <activity
 76-->[com.google.android.libraries.places:places:2.0.0] C:\Users\Hirani\.gradle\caches\transforms-2\files-2.1\553abd5d5b3dd6da156115f3d45aca53\places-2.0.0\AndroidManifest.xml:16:9-23:20
