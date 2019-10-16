@@ -162,7 +162,7 @@ public class PlaceDetails extends AppCompatActivity {
                /* Map<String, Object> map = new HashMap<>();
                 map.put("placeID", placeID);
                 bookmark.updateChildren(map);*/
-                if (flag ==1 ) {
+                if (flag ==1 ) {   //button switch
                     bookmark.child(placeID).setValue(placeID);
                     bookmarkBut.setText("Unbookmark");
                     flag = 0;
