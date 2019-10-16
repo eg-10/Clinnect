@@ -42,6 +42,7 @@ public class PlaceDetails extends AppCompatActivity {
     FirebaseAuth mAuth;
     DatabaseReference curruser, currplace, bookmark;
     public static JSONObject results;
+    int flag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,12 +131,14 @@ public class PlaceDetails extends AppCompatActivity {
 
             }
         });
+        flag = 1;
         bookmark = FirebaseDatabase.getInstance().getReference().child("users").child(customerid).child("places").child("bookmarks");
         bookmark.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.hasChild(placeID)){
-                    bookmarkBut.setVisibility(View.GONE);
+                    bookmarkBut.setText("Unbookmark");
+                    flag = 0;
                 }
             }
 
@@ -159,8 +162,16 @@ public class PlaceDetails extends AppCompatActivity {
                /* Map<String, Object> map = new HashMap<>();
                 map.put("placeID", placeID);
                 bookmark.updateChildren(map);*/
-                bookmark.child(placeID).setValue(placeID);
-                bookmarkBut.setVisibility(View.GONE);
+                if (flag ==1 ) {
+                    bookmark.child(placeID).setValue(placeID);
+                    bookmarkBut.setText("Unbookmark");
+                    flag = 0;
+                }
+                else{
+                    bookmark.child(placeID).removeValue();
+                    bookmarkBut.setText("Bookmark");
+                    flag=1;
+                }
             }
         });
     }
