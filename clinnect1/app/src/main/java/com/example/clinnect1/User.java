@@ -26,7 +26,7 @@ public class User extends AppCompatActivity {
     private Button logout;
     private LinearLayout userinfo;
     private String customerid = "";
-    private TextView namebox, agebox, genderbox;
+    private TextView namebox/*, agebox, genderbox*/;
     FirebaseAuth mAuth;
     DatabaseReference curruser;
     @Override
@@ -35,8 +35,8 @@ public class User extends AppCompatActivity {
         setContentView(R.layout.activity_user);
         userinfo = findViewById(R.id.info1);
         namebox = findViewById(R.id.name1);
-        agebox = findViewById(R.id.age);
-        genderbox = findViewById(R.id.gender);
+        /*agebox = findViewById(R.id.age);
+        genderbox = findViewById(R.id.gender);*/
         logout = findViewById(R.id.logout);
         customerid = FirebaseAuth.getInstance().getCurrentUser().getUid();
         curruser = FirebaseDatabase.getInstance().getReference().child("users").child(customerid);
@@ -58,12 +58,12 @@ public class User extends AppCompatActivity {
                     if (map.get("name")!= null){
                         namebox.setText(map.get("name").toString());
                     }
-                    if (map.get("age")!= null ){
+                  /* if (map.get("age")!= null ){
                         agebox.setText(map.get("age").toString());
                     }
                     if (map.get("sex")!= null){
                         genderbox.setText(map.get("sex").toString());
-                    }
+                    }*/
                 }
             }
 

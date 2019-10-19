@@ -25,7 +25,7 @@ import java.util.Map;
 public class Signup_form extends AppCompatActivity {
 
 
-    EditText emailId, password,confirmpassword, namebox, agebox, sexbox,usernamebox;
+    EditText emailId, password,confirmpassword, namebox/*, agebox, sexbox,usernamebox*/;
     Button btn_register;
     private FirebaseAuth firebaseAuth;
 
@@ -35,8 +35,8 @@ public class Signup_form extends AppCompatActivity {
         setContentView(R.layout.activity_signup_form);
         getSupportActionBar().setTitle("Signup Form");
         namebox = findViewById(R.id.namebox);
-        agebox = findViewById(R.id.agebox);
-        sexbox = findViewById(R.id.sexBox);
+       /* agebox = findViewById(R.id.agebox);
+        sexbox = findViewById(R.id.sexBox);*/
         emailId = findViewById(R.id.text1);
         password = findViewById(R.id.text2);
         confirmpassword = findViewById(R.id.text3);
@@ -84,15 +84,15 @@ public class Signup_form extends AppCompatActivity {
 
                                     if (task.isSuccessful()) {
                                         String name = namebox.getText().toString();
-                                        String age = agebox.getText().toString();
-                                        String sex = sexbox.getText().toString();
+                                       /* String age = agebox.getText().toString();
+                                        String sex = sexbox.getText().toString();*/
                                         startActivity(new Intent(getApplicationContext(),MainActivity.class));
                                         String uid = firebaseAuth.getCurrentUser().getUid();
                                         DatabaseReference curruser =  FirebaseDatabase.getInstance().getReference().child("users").child(uid);
                                         Map map = new HashMap();
                                         map.put("name",name);
-                                        map.put("age",age);
-                                        map.put("sex",sex);
+                                        /*map.put("age",age);
+                                        map.put("sex",sex);*/
                                         curruser.setValue(map);
 
                                         startActivity(new Intent(getApplicationContext(),MainActivity.class));
