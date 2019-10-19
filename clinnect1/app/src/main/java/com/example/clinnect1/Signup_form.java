@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.clinnect.R;
@@ -26,25 +27,25 @@ public class Signup_form extends AppCompatActivity {
 
 
     EditText emailId, password,confirmpassword, namebox/*, agebox, sexbox,usernamebox*/;
-    Button btn_register;
+    LinearLayout snregister;
     private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_form);
-        getSupportActionBar().setTitle("Signup Form");
+
         namebox = findViewById(R.id.namebox);
        /* agebox = findViewById(R.id.agebox);
         sexbox = findViewById(R.id.sexBox);*/
         emailId = findViewById(R.id.text1);
         password = findViewById(R.id.text2);
         confirmpassword = findViewById(R.id.text3);
-        btn_register = findViewById(R.id.button1);
+        snregister = findViewById(R.id.snreg);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        btn_register.setOnClickListener(new View.OnClickListener() {
+        snregister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

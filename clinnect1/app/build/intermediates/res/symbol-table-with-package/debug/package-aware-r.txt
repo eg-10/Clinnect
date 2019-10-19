@@ -645,7 +645,6 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
-color background
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -1121,6 +1120,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1441,8 +1441,11 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add_user
 drawable avd_hide_password
 drawable avd_show_password
+drawable background_edittext
+drawable background_text_email
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1480,10 +1483,13 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_launcher_background
+drawable ic_launcher_background_login
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable log_in
+drawable mail
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1499,6 +1505,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable password
 drawable places_autocomplete_toolbar_shadow
 drawable places_powered_by_google_dark
 drawable places_powered_by_google_light
@@ -1508,6 +1515,7 @@ drawable quantum_ic_cloud_off_vd_theme_24
 drawable quantum_ic_search_grey600_24
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable user
 id ALT
 id CTRL
 id FUNCTION
@@ -1581,7 +1589,8 @@ id beginning
 id blocking
 id bookmark
 id bottom
-id button1
+id btn_signup
+id btn_signup2
 id button2
 id buttonPanel
 id center
@@ -1651,6 +1660,7 @@ id line1
 id line3
 id listMode
 id list_item
+id lnreg
 id logout
 id main_text
 id map
@@ -1700,6 +1710,7 @@ id places_autocomplete_search_button
 id places_autocomplete_search_input
 id places_autocomplete_separator
 id places_autocomplete_try_again
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -1739,6 +1750,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id snreg
 id spacer
 id split_action_bar
 id spread
@@ -1784,6 +1796,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tvtitle
 id unchecked
 id uniform
 id unlabeled
