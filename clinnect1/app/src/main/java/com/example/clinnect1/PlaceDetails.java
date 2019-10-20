@@ -40,9 +40,11 @@ public class PlaceDetails extends AppCompatActivity {
     private RatingBar rbar;
     private Button bookmarkBut;
     FirebaseAuth mAuth;
-    DatabaseReference curruser, currplace, bookmark;
+    DatabaseReference curruser, currplace, bookmark,bm;
     public static JSONObject results;
     int flag;
+    float rate;
+    String name,addr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +77,8 @@ public class PlaceDetails extends AppCompatActivity {
                             results = response.getJSONObject("result");
                             Log.i(TAG, "Length:" + results.length());
                             title.setText(results.getString("name"));
+                            name = results.getString("name");
+                            addr = results.getString("formatted_address");
                             address.setText("Address: \n" + results.getString("formatted_address"));
                             phone.setText("Phone: " + results.getString("formatted_phone_number"));
                             rating.setText("Ratings: " + results.getString("rating"));
@@ -116,13 +120,14 @@ public class PlaceDetails extends AppCompatActivity {
                     int count = 0;
                     float avg;
                     for(DataSnapshot child : dataSnapshot.getChildren()){
-                        sum = sum + Integer.valueOf(child.getValue().toString());
+                        sum = sum + Float.valueOf(child.getValue().toString());
                         count++;
                     }
                     avg = sum/count;
-                    if (avg!=0);
-                    rbar.setRating(avg);
-
+                    if (avg!=0) {
+                        rbar.setRating(avg);
+                        rate = avg;
+                    }
 
                 }}
 
@@ -150,8 +155,8 @@ public class PlaceDetails extends AppCompatActivity {
         rbar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-                curruser.setValue(v);
-                currplace.child(customerid).setValue(v);
+                curruser.setValue(Float.toString(v));
+                currplace.child(customerid).setValue(Float.toString(v));
                 rbar.setRating(v);
             }
         });
@@ -163,7 +168,11 @@ public class PlaceDetails extends AppCompatActivity {
                 map.put("placeID", placeID);
                 bookmark.updateChildren(map);*/
                 if (flag ==1 ) {   //button switch
-                    bookmark.child(placeID).setValue(placeID);
+                    bm = bookmark.child(placeID);
+                    bm.child("name").setValue(name);
+                    bm.child("address").setValue(addr);
+                    bm.child("placeid").setValue(placeID);
+                    bm.child("rating").setValue((rate));
                     bookmarkBut.setText("Unbookmark");
                     flag = 0;
                 }
