@@ -103,6 +103,8 @@ public class Signup_form extends AppCompatActivity {
                                         progressDialog.dismiss();
 
                                         startActivity(new Intent(getApplicationContext(),Login_form.class));
+                                        FirebaseAuth.getInstance().signOut();
+
                                         Toast.makeText(Signup_form.this, "Registration Complete", Toast.LENGTH_SHORT).show();
                                     }
                                     else {

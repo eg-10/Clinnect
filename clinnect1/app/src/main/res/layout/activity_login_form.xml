@@ -163,7 +163,7 @@
                         android:id="@+id/btn_signup2"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:text="Sign in"
+                        android:text="Sign up"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
                         android:textSize="20sp"
