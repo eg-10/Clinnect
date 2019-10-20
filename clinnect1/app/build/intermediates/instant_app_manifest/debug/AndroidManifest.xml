@@ -33,6 +33,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.clinnect1.Bookmark" />
         <activity android:name="com.example.clinnect1.User" />
         <activity android:name="com.example.clinnect1.PlaceDetails" />
         <activity android:name="com.example.clinnect1.Signup_form" />

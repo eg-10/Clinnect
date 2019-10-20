@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5312157b-18a2-48c9-a09d-04e38a05c59f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/clinnect1/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/app/build/generated/source/buildConfig/androidTest/debug/com/example/clinnect1/test/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/app/build/generated/source/buildConfig/androidTest/debug/com/example/clinnect1/test/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/app/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/app/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clinnect1/app/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clinnect1/app/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5312157b-18a2-48c9-a09d-04e38a05c59f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,68 +12,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/Login_form.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/PlaceDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3247">
-              <caret line="221" selection-start-line="221" selection-end-line="221" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/Signup_form.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/User.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/res/layout/activity_user.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clinnect1/build.gradle">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clinnect1/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,8 +50,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,144 +57,12 @@
               <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
               <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="generated" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="intermediates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="mipmap-anydpi-v26" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,49 +189,13 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/Login_form.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/PlaceDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3247">
-          <caret line="221" selection-start-line="221" selection-end-line="221" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/Signup_form.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/User.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/res/layout/activity_user.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clinnect1/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clinnect1/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/Login_form.java" />
+    <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/PlaceDetails.java" />
+    <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/Signup_form.java" />
+    <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/User.java" />
+    <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/res/layout/activity_user.xml" />
+    <entry file="file://$PROJECT_DIR$/clinnect1/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/clinnect1/app/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/clinnect1/app/src/main/java/com/example/clinnect1/MainActivity.java" />
   </component>
 </project>

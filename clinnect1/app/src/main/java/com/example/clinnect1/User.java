@@ -23,21 +23,21 @@ import java.util.Map;
 
 public class User extends AppCompatActivity {
 
-    private Button logout;
+    private Button logout,bookmark;
     private LinearLayout userinfo;
     private String customerid = "";
-    private TextView namebox/*, agebox, genderbox*/;
+    private TextView namebox, agebox, genderbox;
     FirebaseAuth mAuth;
     DatabaseReference curruser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
-        userinfo = findViewById(R.id.info1);
+
         namebox = findViewById(R.id.name1);
-        /*agebox = findViewById(R.id.age);
-        genderbox = findViewById(R.id.gender);*/
+
         logout = findViewById(R.id.logout);
+        bookmark = findViewById(R.id.bookmarks);
         customerid = FirebaseAuth.getInstance().getCurrentUser().getUid();
         curruser = FirebaseDatabase.getInstance().getReference().child("users").child(customerid);
         logout.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +50,12 @@ public class User extends AppCompatActivity {
 
             }
         });
+        bookmark.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Bookmark.class));
+            }
+        });
         curruser.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -58,12 +64,8 @@ public class User extends AppCompatActivity {
                     if (map.get("name")!= null){
                         namebox.setText(map.get("name").toString());
                     }
-                  /* if (map.get("age")!= null ){
-                        agebox.setText(map.get("age").toString());
-                    }
-                    if (map.get("sex")!= null){
-                        genderbox.setText(map.get("sex").toString());
-                    }*/
+
+
                 }
             }
 

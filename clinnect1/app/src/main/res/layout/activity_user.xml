@@ -1,55 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
     tools:context="com.example.clinnect1.User">
 
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="414dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginBottom="7dp"
-        android:text="Log out"
-        android:textAlignment="center"
-        android:textColorHint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/info1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.214"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
 
     <LinearLayout
-        android:id="@+id/info1"
-        android:layout_width="396dp"
-        android:layout_height="503dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logout">
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name1">
 
-        <TextView
-            android:id="@+id/name1"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bookmarks"
+            android:id="@+id/bookmarks"
+            />
 
-       
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/logout" />
 
-        <TextView
-            android:id="@+id/gender"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
