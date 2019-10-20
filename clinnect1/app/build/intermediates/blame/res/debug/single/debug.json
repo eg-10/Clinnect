@@ -1768,6 +1768,10 @@
         "source": "C:\\Users\\Abhir\\.gradle\\caches\\transforms-2\\files-2.1\\383837a1f189d10df3511e6927171459\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
+        "merged": "C:\\Users\\Abhir\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_splashscreen.xml.flat",
+        "source": "C:\\Users\\Abhir\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable\\background_splashscreen.xml"
+    },
+    {
         "merged": "C:\\Users\\Abhir\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark.xml.flat",
         "source": "C:\\Users\\Abhir\\.gradle\\caches\\transforms-2\\files-2.1\\8eb866707b690ca0a19e0e3fe5cc8413\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
@@ -2246,6 +2250,10 @@
     {
         "merged": "C:\\Users\\Abhir\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Abhir\\.gradle\\caches\\transforms-2\\files-2.1\\383837a1f189d10df3511e6927171459\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Abhir\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logo.png.flat",
+        "source": "C:\\Users\\Abhir\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\logo.png"
     },
     {
         "merged": "C:\\Users\\Abhir\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_dialog.xml.flat",

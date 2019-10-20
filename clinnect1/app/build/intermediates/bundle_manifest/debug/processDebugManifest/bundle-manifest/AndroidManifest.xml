@@ -35,13 +35,18 @@
         <activity android:name="com.example.clinnect1.User" />
         <activity android:name="com.example.clinnect1.PlaceDetails" />
         <activity android:name="com.example.clinnect1.Signup_form" />
-        <activity android:name="com.example.clinnect1.Login_form" >
+        <activity
+            android:name="com.example.clinnect1.SplashScreen"
+            android:theme="@style/SplashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.clinnect1.Login_form"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.example.clinnect1.MainActivity"
             android:parentActivityName="com.example.clinnect1.Login_form" >
