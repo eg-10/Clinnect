@@ -3,6 +3,7 @@ package com.example.clinnect1;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -29,12 +30,15 @@ public class Signup_form extends AppCompatActivity {
     EditText emailId, password,confirmpassword, namebox/*, agebox, sexbox,usernamebox*/;
     LinearLayout snregister;
     private FirebaseAuth firebaseAuth;
+    ProgressDialog progressDialog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_form);
-
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Registering");
         namebox = findViewById(R.id.namebox);
        /* agebox = findViewById(R.id.agebox);
         sexbox = findViewById(R.id.sexBox);*/
@@ -77,6 +81,7 @@ public class Signup_form extends AppCompatActivity {
                 }
 
                 if (pwd.equals(confpwd)){
+                    progressDialog.show();
 
                     firebaseAuth.createUserWithEmailAndPassword(email, pwd)
                             .addOnCompleteListener(Signup_form.this, new OnCompleteListener<AuthResult>() {
@@ -95,11 +100,13 @@ public class Signup_form extends AppCompatActivity {
                                         /*map.put("age",age);
                                         map.put("sex",sex);*/
                                         curruser.setValue(map);
+                                        progressDialog.dismiss();
 
-                                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                                        startActivity(new Intent(getApplicationContext(),Login_form.class));
                                         Toast.makeText(Signup_form.this, "Registration Complete", Toast.LENGTH_SHORT).show();
                                     }
                                     else {
+                                        progressDialog.dismiss();
 
                                         Toast.makeText(Signup_form.this, "Authentication Failed", Toast.LENGTH_SHORT).show();
                                     }

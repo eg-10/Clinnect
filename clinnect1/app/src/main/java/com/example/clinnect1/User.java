@@ -3,6 +3,7 @@ package com.example.clinnect1;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -29,12 +30,16 @@ public class User extends AppCompatActivity {
     private TextView namebox, agebox, genderbox;
     FirebaseAuth mAuth;
     DatabaseReference curruser;
+    ProgressDialog progressDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
 
         namebox = findViewById(R.id.name1);
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Loading");
 
         logout = findViewById(R.id.logout);
         bookmark = findViewById(R.id.bookmarks);
@@ -43,6 +48,7 @@ public class User extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 FirebaseAuth.getInstance().signOut();
                 finish();
                 startActivity((new Intent(getApplicationContext(), Login_form.class)));
@@ -50,12 +56,15 @@ public class User extends AppCompatActivity {
 
             }
         });
+        bookmark.setVisibility(View.GONE);
+        logout.setVisibility(View.GONE);
         bookmark.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), Bookmark.class));
             }
         });
+        progressDialog.show();
         curruser.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -64,14 +73,16 @@ public class User extends AppCompatActivity {
                     if (map.get("name")!= null){
                         namebox.setText(map.get("name").toString());
                     }
-
-
+                    bookmark.setVisibility(View.VISIBLE);
+                    logout.setVisibility(View.VISIBLE);
+                    progressDialog.dismiss();
                 }
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(getApplicationContext(), "Login Failed or User Not Available", Toast.LENGTH_SHORT).show();
+                progressDialog.dismiss();
             }
         });}}
 

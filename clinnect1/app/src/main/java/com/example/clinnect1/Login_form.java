@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -28,6 +29,7 @@ public class Login_form extends AppCompatActivity {
     LinearLayout login;
     private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
+    ProgressDialog progressDialog;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -39,6 +41,8 @@ public class Login_form extends AppCompatActivity {
         password = findViewById(R.id.text2);
         lnregister =findViewById(R.id.lnreg);
         login=findViewById(R.id.button2);
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Logging in");
         firebaseAuth = FirebaseAuth.getInstance();
         authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -58,7 +62,7 @@ public class Login_form extends AppCompatActivity {
 
                 String email = emailId.getText().toString().trim();
                 String pwd = password.getText().toString().trim();
-
+                progressDialog.show();
 
                 if (TextUtils.isEmpty(email)) {
 
@@ -77,17 +81,19 @@ public class Login_form extends AppCompatActivity {
                     Toast.makeText(Login_form.this, "Password too short", Toast.LENGTH_SHORT).show();
                 }
 
-
+                progressDialog.show();
                 firebaseAuth.signInWithEmailAndPassword(email, pwd)
                         .addOnCompleteListener(Login_form.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
+                                    progressDialog.dismiss();
+
 
                                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
                                 } else {
-
+                                    progressDialog.dismiss();
 
                                     Toast.makeText(Login_form.this, "Login Failed or User Not Available", Toast.LENGTH_SHORT).show();
                                 }
