@@ -114,4 +114,9 @@ public class Signup_form extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(Signup_form.this, Login_form.class));
+    }
 }
