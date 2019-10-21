@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -11,16 +14,64 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/autocomplete_fragment"
-        android:layout_marginTop="3dp"
-        android:color = "#000"
-        tools:context=".MapsActivity" />
+        android:layout_marginTop="0dp"
+        android:color="#000"
+        tools:context=".MapsActivity">
 
-    <fragment
-        android:id="@+id/autocomplete_fragment"
-        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_margin="7dp">
+                <fragment
+                    android:id="@+id/autocomplete_fragment"
+                    android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/location_fab"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:gravity="top|end"
+                android:clickable="true"
+                android:focusable="true"
+                map:backgroundTint="@color/colorPrimary"
+                map:rippleColor="#E4E4E4" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/filter_fab"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/location_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:gravity="top|end"
+                android:clickable="true"
+                android:focusable="true"
+                map:backgroundTint="@color/colorPrimary"
+                map:rippleColor="#E4E4E4" />
+
+        </RelativeLayout>
+    </fragment>
 
 
-</RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/results_rv"-->
+    <!--        android:scrollbars="vertical"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"-->
+    <!--        app:behavior_hideable="true"-->
+    <!--        app:behavior_peekHeight="30dp" />-->

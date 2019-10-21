@@ -1489,12 +1489,15 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_filter_list_black_24dp
+drawable ic_filter_list_white_24dp
 drawable ic_launcher_background
 drawable ic_launcher_background_login
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_my_location_white_24dp
 drawable log_in
 drawable logo
 drawable mail
@@ -1605,6 +1608,7 @@ id button2
 id buttonPanel
 id cancel_action
 id cardView
+id card_view
 id center
 id center_horizontal
 id center_vertical
@@ -1645,6 +1649,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id filter_fab
 id fixed
 id forever
 id ghost_view
@@ -1672,6 +1677,7 @@ id line3
 id listMode
 id list_item
 id lnreg
+id location_fab
 id logout
 id main_text
 id map
@@ -2017,6 +2023,7 @@ string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_maps
+string title_dialog
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

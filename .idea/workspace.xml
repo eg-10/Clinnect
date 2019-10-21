@@ -12,7 +12,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,10 +40,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="84" />
-    <option name="y" value="84" />
-    <option name="width" value="1752" />
-    <option name="height" value="981" />
+    <option name="x" value="83" />
+    <option name="y" value="83" />
+    <option name="width" value="1753" />
+    <option name="height" value="982" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -54,15 +54,20 @@
         <subPane>
           <expand>
             <path>
-              <item name="Clinnect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Clinnect" type="462c0819:PsiDirectoryNode" />
+              <item name="clinnec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clinnec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clinnec" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clinnec" type="462c0819:PsiDirectoryNode" />
+              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -166,10 +171,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3298887" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32980832" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -177,7 +182,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3285968" />
-      <window_info anchor="bottom" id="TODO" order="1" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="TODO" order="1" visible="true" weight="0.32719547" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.3285968" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Messages" order="4" visible="true" weight="0.3285968" />
