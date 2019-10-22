@@ -50,11 +50,12 @@ public class Bookmark extends AppCompatActivity {
     String name,addr;
     PlaceAdapter adapter;
     static List<Place> placeList;
-    DatabaseReference userbookmarks,currplace;
+    DatabaseReference userbookmarks,place;
     String customerid;
     public static JSONObject results;
     ProgressDialog progressDialog;
     String placeid;
+    TextView empty;
 
     double rating;
     static double[] ratings;
@@ -68,7 +69,10 @@ public class Bookmark extends AppCompatActivity {
         setContentView(R.layout.activity_bookmark);
         cont = this;
         placeList = new ArrayList<>();
+        placeList.clear();
         customerid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        empty = findViewById(R.id.empty_view);
+        place = FirebaseDatabase.getInstance().getReference().child("users").child(customerid).child("places");
         userbookmarks = FirebaseDatabase.getInstance().getReference().child("users").child(customerid).child("places").child("bookmarks");
         recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
@@ -79,13 +83,17 @@ public class Bookmark extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new PlaceAdapter(this,placeList);
         progressDialog.show();
-        userbookmarks.addListenerForSingleValueEvent(new ValueEventListener() {
+        place.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if (dataSnapshot.exists() && dataSnapshot.getChildrenCount() > 0) {
-                    i = 0;
+                if(dataSnapshot.hasChild("bookmarks")){
+                    userbookmarks.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            if (dataSnapshot.exists() && dataSnapshot.getChildrenCount() > 0) {
+                                i = 0;
 
-                    for (DataSnapshot child : dataSnapshot.getChildren()) {
+                                for (DataSnapshot child : dataSnapshot.getChildren()) {
 
 
                        /* currplace = FirebaseDatabase.getInstance().getReference().child("places").child(bookmarks[i]).child("rating");
@@ -112,28 +120,43 @@ public class Bookmark extends AppCompatActivity {
 
                             }
                         });*/
-                        placeid = child.getKey();
-                        rating = Double.valueOf(child.child("rating").getValue().toString());
-                        name= child.child("name").getValue().toString();
-                        addr = child.child("address").getValue().toString();
-                        places = new Place(name,addr,rating,placeid);
-                        placeList.add(places);
+                                    placeid = child.getKey();
+                                    rating = Double.valueOf(child.child("rating").getValue().toString());
+                                    name= child.child("name").getValue().toString();
+                                    addr = child.child("address").getValue().toString();
+                                    places = new Place(name,addr,rating,placeid);
+                                    placeList.add(places);
 
-                        //placeList.add(new Place(name,addr,rating));
-                        // Log.i(TAG,names[i]+addrs[i]+ratings[i]);
-                        i++;
-                    }
-                    adapter.notifyDataSetChanged();
+                                    //placeList.add(new Place(name,addr,rating));
+                                    // Log.i(TAG,names[i]+addrs[i]+ratings[i]);
+                                    i++;
+                                }
+                                adapter.notifyDataSetChanged();
+                                progressDialog.dismiss();
+
+
+                            }}
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+                            progressDialog.dismiss();
+                        }
+                    });
+                }
+                else {
+                    recyclerView.setVisibility(View.GONE);
+                    empty.setVisibility(View.VISIBLE);
                     progressDialog.dismiss();
+                }
 
-
-                }}
+            }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                progressDialog.dismiss();
+
             }
         });
+
 
 
         recyclerView.setAdapter(adapter);
@@ -141,5 +164,9 @@ public class Bookmark extends AppCompatActivity {
 
     }
 
-
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        recreate();
+    }
 }

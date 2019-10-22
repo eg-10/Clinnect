@@ -3,6 +3,7 @@ package com.example.clinnect1;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -45,6 +46,7 @@ public class PlaceDetails extends AppCompatActivity {
     int flag;
     float rate;
     String name,addr;
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,8 @@ public class PlaceDetails extends AppCompatActivity {
         setContentView(R.layout.activity_place_details);
         rbar = findViewById(R.id.ratingBar);
         bookmarkBut = findViewById(R.id.bookmark);
+        progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Loading");
         final TextView title = findViewById(R.id.name);
         final TextView address = findViewById(R.id.address);
         final TextView phone = findViewById(R.id.phone);
@@ -60,6 +64,7 @@ public class PlaceDetails extends AppCompatActivity {
         customerid = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
         Intent intent = getIntent();
+        progressDialog.show();
         final String placeID = intent.getStringExtra("placeID");
         Log.i(TAG, "place id: " + placeID);
         String url = "https://maps.googleapis.com/maps/api/place/details/json?" +
@@ -129,7 +134,9 @@ public class PlaceDetails extends AppCompatActivity {
                         rate = avg;
                     }
 
-                }}
+                }
+                progressDialog.dismiss();
+            }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
@@ -145,11 +152,12 @@ public class PlaceDetails extends AppCompatActivity {
                     bookmarkBut.setText("Unbookmark");
                     flag = 0;
                 }
+                progressDialog.dismiss();
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
+                progressDialog.dismiss();
             }
         });
         rbar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
@@ -158,6 +166,20 @@ public class PlaceDetails extends AppCompatActivity {
                 curruser.setValue(Float.toString(v));
                 currplace.child(customerid).setValue(Float.toString(v));
                 rbar.setRating(v);
+                rate = v;
+                bookmark.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.hasChild(placeID)){
+                            bookmark.child(placeID).child("rating").setValue(Float.toString(rate));
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
             }
         });
         bookmarkBut.setOnClickListener(new View.OnClickListener() {

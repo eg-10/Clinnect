@@ -28,7 +28,7 @@ public class Login_form extends AppCompatActivity {
     LinearLayout lnregister;
     LinearLayout login;
     private FirebaseAuth firebaseAuth;
-    private FirebaseAuth.AuthStateListener authStateListener;
+    //private FirebaseAuth.AuthStateListener authStateListener;
     ProgressDialog progressDialog;
 
     @SuppressLint("WrongViewCast")
@@ -44,7 +44,7 @@ public class Login_form extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Logging in");
         firebaseAuth = FirebaseAuth.getInstance();
-        authStateListener = new FirebaseAuth.AuthStateListener() {
+       /* authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -53,7 +53,7 @@ public class Login_form extends AppCompatActivity {
                     finish();
                 }
             }
-        };
+        };*/
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,12 +118,12 @@ public class Login_form extends AppCompatActivity {
 
 
 
-    @Override
+   /* @Override
     protected void onStart() {
         super.onStart();
         firebaseAuth.addAuthStateListener(authStateListener);
 
-    }
+    }*/
 
     @Override
     public void onBackPressed(){

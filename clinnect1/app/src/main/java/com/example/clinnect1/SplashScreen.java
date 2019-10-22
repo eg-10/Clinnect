@@ -3,15 +3,29 @@ package com.example.clinnect1;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class SplashScreen extends AppCompatActivity {
+    public FirebaseAuth.AuthStateListener authStateListener;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        startActivity(new Intent(this,Login_form.class));
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null){
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
+        }
+        else{
+            startActivity(new Intent(getApplicationContext(),Login_form.class));
+            finish();
+        }
     }
 }
