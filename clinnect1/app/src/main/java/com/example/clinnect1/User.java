@@ -24,7 +24,7 @@ import java.util.Map;
 
 public class User extends AppCompatActivity {
 
-    private Button logout,bookmark;
+    private LinearLayout logout,bookmark;
     private LinearLayout userinfo;
     private String customerid = "";
     private TextView namebox, agebox, genderbox;

@@ -649,6 +649,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color black
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1489,7 +1490,9 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_bookmark_black_24dp
 drawable ic_filter_list_black_24dp
+drawable ic_filter_list_blue
 drawable ic_filter_list_white_24dp
 drawable ic_launcher_background
 drawable ic_launcher_background_login
@@ -1498,6 +1501,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_my_location_white_24dp
+drawable ic_power_settings_new_black_24dp
 drawable log_in
 drawable logo
 drawable mail

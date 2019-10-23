@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     final boolean[] checked = new boolean[6];
     public static HashMap<String,String> keywords = new HashMap<>();
     public static HashSet <String> selected_types= new HashSet<>();
-    private Button userinfo;
+    private LinearLayout userinfo;
 
     //types = {"dentist", "doctor", "hospital", "pharmacy", "physiotherapist", "veterinary_care"}
 
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         keywords.put("Veterinary care", "vet");
 
         FloatingActionButton filter_fab = findViewById(R.id.filter_fab);
-        filter_fab.setImageResource(R.drawable.ic_filter_list_white_24dp);
+        filter_fab.setImageResource(R.drawable.ic_filter_list_blue);
         filter_fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

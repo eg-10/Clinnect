@@ -86,12 +86,13 @@ public class PlaceDetails extends AppCompatActivity {
                             addr = results.getString("formatted_address");
                             address.setText("Address: \n" + results.getString("formatted_address"));
                             phone.setText("Phone: " + results.getString("formatted_phone_number"));
-                            rating.setText("Ratings: " + results.getString("rating"));
+                            rating.setText("Google Ratings: " + results.getString("rating"));
                             website.setText("Website: " + results.getString("website"));
                             Toast toast = Toast.makeText(getApplicationContext(),
                                     "Retrieved Place Details results!",
                                     Toast.LENGTH_SHORT);
                             toast.show();
+                            progressDialog.dismiss();
 
                         } catch (JSONException e){
 
@@ -99,6 +100,7 @@ public class PlaceDetails extends AppCompatActivity {
                                     "Error in retrieving Place Details!outer",
                                     Toast.LENGTH_SHORT);
                             toast.show();
+                            progressDialog.dismiss();
                         }
                     }
                 }, new Response.ErrorListener() {
