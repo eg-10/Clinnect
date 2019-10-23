@@ -45,7 +45,7 @@ public class PlaceDetails extends AppCompatActivity {
     public static JSONObject results;
     int flag;
     float rate;
-    String name,addr;
+    String name,addr,weekly_timings;
     ProgressDialog progressDialog;
 
     @Override
@@ -81,6 +81,14 @@ public class PlaceDetails extends AppCompatActivity {
                             Log.i(TAG, response.getString("status"));
                             results = response.getJSONObject("result");
                             Log.i(TAG, "Length:" + results.length());
+
+//                            weekly_timings="Weekly Timings:";
+//                            for(int i = 0; i < results.getJSONObject("opening_hours").getJSONArray("weekday_text").length(); i++){
+//                                weekly_timings += "\n";
+//                                weekly_timings += results.getJSONObject("opening_hours").getJSONArray("weekday_text").getString(i);
+//                            }
+//                            Log.i(TAG,weekly_timings);
+
                             title.setText(results.getString("name"));
                             name = results.getString("name");
                             addr = results.getString("formatted_address");
@@ -96,21 +104,15 @@ public class PlaceDetails extends AppCompatActivity {
 
                         } catch (JSONException e){
 
-                            Toast toast = Toast.makeText(getApplicationContext(),
-                                    "Error in retrieving Place Details!outer",
-                                    Toast.LENGTH_SHORT);
-                            toast.show();
-                            progressDialog.dismiss();
+                            Log.e(TAG, "Error in retrieving(INNER)");
                         }
                     }
                 }, new Response.ErrorListener() {
 
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast toast = Toast.makeText(getApplicationContext(),
-                                "Error in retrieving Place Details!",
-                                Toast.LENGTH_SHORT);
-                        toast.show();
+                        Log.e(TAG, "Error in retrieving(OUTER)");
+
 
                     }
                 });
@@ -207,73 +209,4 @@ public class PlaceDetails extends AppCompatActivity {
             }
         });
     }
-
-
-//    private void setNearbyPlacesArray(double latitude, double longitude, String type, String keyword){
-//
-//
-//        String url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" +
-//                "location=" + latitude + "," + longitude +
-//                "&type=" + type +
-//                "&keyword=" + keyword +
-//                "&rankby=distance" +
-//                "&key=" + apiKey;
-//
-//        Log.i(TAG, url);
-//
-//
-//        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
-//                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-//
-//                    @Override
-//                    public void onResponse(JSONObject response) {
-//                        try {
-//                            Log.i(TAG, response.getString("status"));
-//                            results = response.getJSONArray("results");
-//                            Log.i(TAG, "LLLEEngth:" + results.length());
-//                            Toast toast = Toast.makeText(getApplicationContext(),
-//                                    "Retrieved results!",
-//                                    Toast.LENGTH_SHORT);
-//                            toast.show();
-//                            for (int i=0; i<results.length(); i++){
-//
-//                                try {
-//
-//                                    double lat = results.getJSONObject(i).getJSONObject("geometry").getJSONObject("location").getDouble("lat");
-//                                    double lng = results.getJSONObject(i).getJSONObject("geometry").getJSONObject("location").getDouble("lng");
-//                                    String placeID = results.getJSONObject(i).getString("place_id");
-//                                    LatLng latLng = new LatLng(lat,lng);
-//                                    String name = results.getJSONObject(i).getString("name");
-//                                    setMarker(latLng, name, placeID);
-//                                } catch (JSONException e){
-//
-//                                    toast = Toast.makeText(getApplicationContext(),
-//                                            "Error in retrieving nearby hospitals!inner",
-//                                            Toast.LENGTH_SHORT);
-//                                    toast.show();
-//                                }
-//                            }
-//                        } catch (JSONException e){
-//
-//                            Toast toast = Toast.makeText(getApplicationContext(),
-//                                    "Error in retrieving nearby hospitals!outer",
-//                                    Toast.LENGTH_SHORT);
-//                            toast.show();
-//                        }
-//                    }
-//                }, new Response.ErrorListener() {
-//
-//                    @Override
-//                    public void onErrorResponse(VolleyError error) {
-//                        Toast toast = Toast.makeText(getApplicationContext(),
-//                                "Error in retrieving nearby hospitals!",
-//                                Toast.LENGTH_SHORT);
-//                        toast.show();
-//
-//                    }
-//                });
-//
-//        RequestQueue requestQueue = Volley.newRequestQueue(this);
-//        requestQueue.add(jsonObjectRequest);
-//    }
 }

@@ -150,6 +150,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setOnInfoWindowClickListener(this);
         mMap.clear();
         loadPlacesAutocomplete();
+
         FloatingActionButton location_fab = findViewById(R.id.location_fab);
         location_fab.setImageResource(R.drawable.ic_my_location_white_24dp);
         location_fab.setOnClickListener(new View.OnClickListener() {
@@ -217,7 +218,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 }
                                 else
                                     selected_types = (HashSet<String>) currSelection.clone();
+                                mMap.clear();
+                                setPlaceMarker(location,loc_name);
+                                for(String selection: selected_types){
+                                    results = new JSONArray();
+
+                                    Log.i(TAG, "type="+types.get(selection)+"\tkeyword="+keywords.get(selection));
+
+                                    setNearbyPlacesArray(location.latitude, location.longitude, types.get(selection), keywords.get(selection));
+                                }
                             }
+
                         })
                         .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                             @Override
@@ -295,8 +306,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Log.e(TAG, "Lat lng:" + place.getLatLng().latitude);
                 setPlaceMarker(place.getLatLng(), place.getName());
 
-                Iterator<String> it = selected_types.iterator();
-
                 for(String selection: selected_types){
                     results = new JSONArray();
 
@@ -318,6 +327,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void setNearbyPlacesArray(double latitude, double longitude, String type, String keyword){
 
+        Toast toast = Toast.makeText(getApplicationContext(),
+                "Loading...",
+                Toast.LENGTH_SHORT);
+        toast.show();
 
         placeList = new ArrayList<>();
         placeList.clear();
@@ -346,7 +359,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             results = response.getJSONArray("results");
                             Log.i(TAG, "LLLEEngth:" + results.length());
                             Toast toast = Toast.makeText(getApplicationContext(),
-                                    "Retrieved results!",
+                                    "Retrieved Results!",
                                     Toast.LENGTH_SHORT);
                             toast.show();
                             int n = (results.length() <= 15 ) ? results.length() : 10;
@@ -366,18 +379,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                     setMarker(latLng, name, placeID);
                                 } catch (JSONException e){
 
-                                    toast = Toast.makeText(getApplicationContext(),
-                                            "Error in retrieving nearby hospitals!inner",
-                                            Toast.LENGTH_SHORT);
-                                    toast.show();
+                                    Log.e(TAG, "Error in retrieving(INNER)!");
                                 }
                             }
                         } catch (JSONException e){
 
-                            Toast toast = Toast.makeText(getApplicationContext(),
-                                    "Error in retrieving nearby hospitals!outer",
-                                    Toast.LENGTH_SHORT);
-                            toast.show();
+                            Log.e(TAG, "Error in retrieving(OUTER)!");
+
                         }
                         adapter.notifyDataSetChanged();
                         recyclerView.setAdapter(adapter);
@@ -388,10 +396,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast toast = Toast.makeText(getApplicationContext(),
-                                "Error in retrieving nearby hospitals!",
-                                Toast.LENGTH_SHORT);
-                        toast.show();
+                        Log.e(TAG, "Error in retrieving(EVEN MORE OUTER)");
+
 
                     }
                 });

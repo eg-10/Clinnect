@@ -18,10 +18,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top"
         android:layout_margin="7dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="70dp"
+        app:cardCornerRadius="8dp"
         tools:layout_editor_absoluteY="7dp">
 
         <fragment
@@ -32,21 +30,37 @@
 
     </androidx.cardview.widget.CardView>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/filter_fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/user"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="7dp"
-            android:layout_marginBottom="7dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="top|end"
-            app:backgroundTint="#fff"
-            app:rippleColor="@color/colorPrimary" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/location_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="top|end"
+        app:backgroundTint="#fff"
+        app:rippleColor="@color/colorPrimary" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/filter_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/user"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="top|end"
+        app:backgroundTint="#fff"
+        app:rippleColor="@color/colorPrimary" />
 
         <TextView
         android:id="@+id/main_text"
@@ -59,11 +73,11 @@
         android:layout_marginBottom="7dp"
         android:padding="10dp"
         android:fontFamily="sans-serif"
-        android:text="Enter the name of your locality, town or city to Get Started!"
+        android:text="Click on the location button or enter the name of your locality, town or city to Get Started!"
         android:textAlignment="center"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:textSize="36sp" />
+        android:textSize="30sp" />
 
     <LinearLayout
         android:id="@+id/user"
@@ -87,20 +101,4 @@
             android:layout_height="40dp"
             android:background="@drawable/user" />
     </LinearLayout>
-    <!--    <Button-->
-<!--        android:id="@+id/user"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_gravity="bottom"-->
-<!--        android:layout_margin="7dp"-->
-<!--        android:layout_marginBottom="1dp"-->
-<!--        android:text="User"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent" />-->
-
-
-
-
 </RelativeLayout>
