@@ -104,7 +104,6 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/bookmark"
         android:layout_marginBottom="50dp"
-        android:layout_gravity="center_horizontal | bottom"
         android:layout_centerHorizontal="true"
         android:numStars="5"
         android:gravity="center"

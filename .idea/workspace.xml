@@ -40,33 +40,18 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="83" />
-    <option name="y" value="83" />
-    <option name="width" value="1753" />
-    <option name="height" value="982" />
+    <option name="x" value="82" />
+    <option name="y" value="82" />
+    <option name="width" value="1754" />
+    <option name="height" value="983" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="clinnec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinnec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clinnec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clinnec" type="462c0819:PsiDirectoryNode" />
-              <item name="clinnect1" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>

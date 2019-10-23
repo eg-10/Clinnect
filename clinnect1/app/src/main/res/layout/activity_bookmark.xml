@@ -18,5 +18,5 @@
         android:gravity="center"
         android:visibility="gone"
 
-        android:text="No bookmarks" />
+        android:text="No Bookmarks" />
 </RelativeLayout>
