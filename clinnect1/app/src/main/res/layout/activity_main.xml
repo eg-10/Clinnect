@@ -13,13 +13,12 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="7dp"
+        android:layout_margin="7dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"

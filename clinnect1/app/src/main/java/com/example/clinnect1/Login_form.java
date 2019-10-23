@@ -62,7 +62,6 @@ public class Login_form extends AppCompatActivity {
 
                 String email = emailId.getText().toString().trim();
                 String pwd = password.getText().toString().trim();
-                progressDialog.show();
 
                 if (TextUtils.isEmpty(email)) {
 
@@ -81,6 +80,7 @@ public class Login_form extends AppCompatActivity {
                     Toast.makeText(Login_form.this, "Password too short", Toast.LENGTH_SHORT).show();
                 }
 
+               else{
                 progressDialog.show();
                 firebaseAuth.signInWithEmailAndPassword(email, pwd)
                         .addOnCompleteListener(Login_form.this, new OnCompleteListener<AuthResult>() {
@@ -99,7 +99,7 @@ public class Login_form extends AppCompatActivity {
                                 }
                             }
 
-                        });
+                        });}
 
 
             }

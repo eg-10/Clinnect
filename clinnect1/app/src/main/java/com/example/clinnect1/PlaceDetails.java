@@ -85,9 +85,9 @@ public class PlaceDetails extends AppCompatActivity {
                             name = results.getString("name");
                             addr = results.getString("formatted_address");
                             address.setText("Address: \n" + results.getString("formatted_address"));
-                            phone.setText("Phone: " + results.getString("formatted_phone_number"));
-                            rating.setText("Google Ratings: " + results.getString("rating"));
-                            website.setText("Website: " + results.getString("website"));
+                            phone.setText("Phone: \n" + results.getString("formatted_phone_number"));
+                            rating.setText("Google Ratings: \n" + results.getString("rating"));
+                            website.setText("Website: \n" + results.getString("website"));
                             Toast toast = Toast.makeText(getApplicationContext(),
                                     "Retrieved Place Details results!",
                                     Toast.LENGTH_SHORT);
@@ -137,7 +137,6 @@ public class PlaceDetails extends AppCompatActivity {
                     }
 
                 }
-                progressDialog.dismiss();
             }
 
             @Override

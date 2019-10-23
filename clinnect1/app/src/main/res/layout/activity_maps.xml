@@ -63,15 +63,6 @@
         </RelativeLayout>
     </fragment>
 
-
+    <include layout="@layout/search_rec"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-    <!--    <androidx.recyclerview.widget.RecyclerView-->
-    <!--        android:id="@+id/results_rv"-->
-    <!--        android:scrollbars="vertical"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"-->
-    <!--        app:behavior_hideable="true"-->
-    <!--        app:behavior_peekHeight="30dp" />-->

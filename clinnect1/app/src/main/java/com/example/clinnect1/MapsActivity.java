@@ -2,6 +2,7 @@ package com.example.clinnect1;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.FragmentActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.DialogInterface;
@@ -11,6 +12,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.BaseAdapter;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -42,6 +44,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -51,6 +54,7 @@ import java.util.List;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnInfoWindowClickListener {
 
     private GoogleMap mMap;
+    RecyclerView recyclerView;
 
     public static JSONArray results;
 
@@ -66,7 +70,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public static HashMap<String,String> keywords = new HashMap<>();
     public static HashSet <String> selected_types= new HashSet<>();
     final boolean[] checked = new boolean[6];
-
+    PlaceAdapter adapter;
+    static List<com.example.clinnect1.Place> placeList;
+    com.example.clinnect1.Place places;
     private LatLng location;
     private String loc_name;
 
@@ -272,7 +278,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         AutocompleteSupportFragment autocompleteFragment = (AutocompleteSupportFragment)
                 getSupportFragmentManager().findFragmentById(R.id.autocomplete_fragment);
 
-        autocompleteFragment.setPlaceFields(Arrays.asList(Place.Field.ID, Place.Field.NAME, Place.Field.LAT_LNG));
+        autocompleteFragment.setPlaceFields(Arrays.asList(Place.Field.ID, Place.Field.NAME, Place.Field.LAT_LNG, Place.Field.ADDRESS, Place.Field.RATING));
 
         autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
             @Override
@@ -313,6 +319,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private void setNearbyPlacesArray(double latitude, double longitude, String type, String keyword){
 
 
+        placeList = new ArrayList<>();
+        placeList.clear();
+        recyclerView = findViewById(R.id.recyclerView2);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new PlaceAdapter(this,placeList);
+
         String url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" +
                 "location=" + latitude + "," + longitude +
                 "&type=" + type +
@@ -346,6 +359,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                     String placeID = results.getJSONObject(i).getString("place_id");
                                     LatLng latLng = new LatLng(lat,lng);
                                     String name = results.getJSONObject(i).getString("name");
+                                    String address = results.getJSONObject(i).getString("vicinity");
+                                    double rating = results.getJSONObject(i).getDouble("rating");
+                                    places = new com.example.clinnect1.Place(name,address,rating,placeID);
+                                    placeList.add(places);
                                     setMarker(latLng, name, placeID);
                                 } catch (JSONException e){
 
@@ -362,7 +379,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                     Toast.LENGTH_SHORT);
                             toast.show();
                         }
+                        adapter.notifyDataSetChanged();
+                        recyclerView.setAdapter(adapter);
+
                     }
+
                 }, new Response.ErrorListener() {
 
                     @Override
@@ -404,5 +425,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .title(name)
                 .icon(BitmapDescriptorFactory.defaultMarker()));
         marker.setTag(placeID);
+
     }
 }

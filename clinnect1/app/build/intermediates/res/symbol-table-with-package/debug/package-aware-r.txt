@@ -1740,6 +1740,7 @@ id radio
 id rating
 id ratingBar
 id recyclerView
+id recyclerView2
 id right
 id right_icon
 id right_side
@@ -1941,6 +1942,7 @@ layout places_autocomplete_main_fullscreen
 layout places_autocomplete_main_overlay
 layout places_autocomplete_progress
 layout places_autocomplete_search_bar
+layout search_rec
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

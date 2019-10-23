@@ -29,6 +29,7 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.example.clinnect1.MainActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             android:parentActivityName="com.example.clinnect1.Login_form">
             <meta-data
                 android:name="com.google.android.geo.API_KEY"
