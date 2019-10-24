@@ -17,6 +17,9 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"
 
         android:text="No Bookmarks" />
 </RelativeLayout>

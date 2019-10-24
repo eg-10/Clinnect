@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +30,7 @@ public class User extends AppCompatActivity {
     private String customerid = "";
     private TextView namebox, agebox, genderbox;
     FirebaseAuth mAuth;
+    ImageView imageView;
     DatabaseReference curruser;
     ProgressDialog progressDialog;
 
@@ -36,11 +38,10 @@ public class User extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
-
+        imageView = findViewById(R.id.img);
         namebox = findViewById(R.id.name1);
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Loading");
-
         logout = findViewById(R.id.logout);
         bookmark = findViewById(R.id.bookmarks);
         customerid = FirebaseAuth.getInstance().getCurrentUser().getUid();
@@ -75,6 +76,7 @@ public class User extends AppCompatActivity {
                     }
                     bookmark.setVisibility(View.VISIBLE);
                     logout.setVisibility(View.VISIBLE);
+                    imageView.setVisibility(View.VISIBLE);
                     progressDialog.dismiss();
                 }
             }

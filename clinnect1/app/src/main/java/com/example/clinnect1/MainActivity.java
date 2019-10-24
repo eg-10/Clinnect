@@ -199,6 +199,7 @@ public class MainActivity extends AppCompatActivity {
                     else
                     {
                         final Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+
                         Location LocationGps= locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
                         Location LocationNetwork=locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
                         Location LocationPassive=locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
