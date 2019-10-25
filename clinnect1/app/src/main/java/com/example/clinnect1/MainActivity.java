@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.Looper;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
@@ -16,14 +17,22 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.example.clinnect.R;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.common.util.ArrayUtils;
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.libraries.places.api.Places;
 import com.google.android.libraries.places.api.model.Place;
 import com.google.android.libraries.places.api.model.TypeFilter;
@@ -35,12 +44,15 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity {
-
+    double lat,lng;
     private static final String apiKey = "AIzaSyBtiMxQ4SyLkAaHLyXofMt3CkQb8FiW_tk";
+    private LocationRequest locationRequest;
+    private LocationCallback locationCallback;
     private static final String TAG = "MainActivity.java" ;
     public static HashMap<String,String> types = new HashMap<>();
     final boolean[] checked = new boolean[6];
@@ -48,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
     public static HashSet <String> selected_types= new HashSet<>();
     private LinearLayout userinfo;
     LocationManager locationManager;
+    private FusedLocationProviderClient fusedLocationClient;
+
     private static  final int REQUEST_LOCATION=1;
 
 
@@ -58,6 +72,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        locationRequest = LocationRequest.create();
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        locationRequest.setInterval(20 * 1000);
+        locationCallback = new LocationCallback() {
+            @Override
+            public void onLocationResult(LocationResult locationResult) {
+                if (locationResult == null) {
+                    return;
+                }
+                for (Location location : locationResult.getLocations()) {
+                    if (location != null) {
+                        lat = location.getLatitude();
+                        lng = location.getLongitude();
+
+                    }
+                }
+            }
+        };
 
         userinfo = findViewById(R.id.user);
         userinfo.setOnClickListener(new View.OnClickListener() {
@@ -159,6 +192,7 @@ public class MainActivity extends AppCompatActivity {
         location_fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 locationManager=(LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
                 //Check gps is enable or not
@@ -184,59 +218,99 @@ public class MainActivity extends AppCompatActivity {
                     final AlertDialog alertDialog = builder.create();
                     alertDialog.show();
                 }
-                else
-                {
-                    //GPS is already On then
-
-                    if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(MainActivity.this,
-
-                            Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
-                    {
-                        ActivityCompat.requestPermissions(MainActivity.this,new String[]
-                                {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
-                        Toast.makeText(MainActivity.this, "Please allow location access and try again!", Toast.LENGTH_SHORT).show();
-                    }
-                    else
-                    {
-                        final Intent intent = new Intent(MainActivity.this, MapsActivity.class);
-
-                        Location LocationGps= locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-                        Location LocationNetwork=locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-                        Location LocationPassive=locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
-
-                        double lat = 0,lng = 0;
-
-                        if (LocationGps !=null)
-                        {
-                            lat=LocationGps.getLatitude();
-                            lng=LocationGps.getLongitude();
-                        }
-                        else if (LocationNetwork !=null)
-                        {
-                            lat=LocationNetwork.getLatitude();
-                            lng=LocationNetwork.getLongitude();
-                        }
-                        else if (LocationPassive !=null)
-                        {
-                            lat=LocationPassive.getLatitude();
-                            lng=LocationPassive.getLongitude();
-                        }
-                        if(lat == 0 && lng == 0)
-                        {
-                            Toast.makeText(MainActivity.this, "Can't Get Your Location", Toast.LENGTH_SHORT).show();
-                        }
-                        else {
-                            intent.putExtra("lat",lat);
-                            intent.putExtra("lng",lng);
-                            intent.putExtra("name","Your Location");
-                            intent.putExtra("selected_types",selected_types);
-                            intent.putExtra("checked",checked);
-                            startActivity(intent);
-                        }
-                    }
+                else {
+                    fetchLocation();
                 }
-            }
-        });
+            }});
+//                loc
+//                ationManager=(LocationManager) getSystemService(Context.LOCATION_SERVICE);
+//
+//                //Check gps is enable or not
+//
+//                if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+//
+//                    //Get user to enable gps
+//
+//                    final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+//
+//                    builder.setMessage("Enable GPS").setCancelable(false).setPositiveButton("YES", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+//                        }
+//                    }).setNegativeButton("NO", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//
+//                            dialog.cancel();
+//                        }
+//                    });
+//                    final AlertDialog alertDialog = builder.create();
+//                    alertDialog.show();
+//                }
+//                else
+//                {
+//                    //GPS is already On then
+//
+//                    if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(MainActivity.this,
+//
+//                            Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
+//                    {
+//                        ActivityCompat.requestPermissions(MainActivity.this,new String[]
+//                                {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
+//                        Toast.makeText(MainActivity.this, "Please allow location access and try again!", Toast.LENGTH_SHORT).show();
+//                    }
+//                    else
+//                    {
+//                        final Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+//
+////                        Location LocationGps= locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+////                        Location LocationNetwork=locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+////                        Location LocationPassive=locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
+////
+////                        double lat = 0,lng = 0;
+////
+////                        if (LocationGps !=null)
+////                        {
+////                            lat=LocationGps.getLatitude();
+////                            lng=LocationGps.getLongitude();
+////                        }
+////                        else if (LocationNetwork !=null)
+////                        {
+////                            lat=LocationNetwork.getLatitude();
+////                            lng=LocationNetwork.getLongitude();
+////                        }
+////                        else if (LocationPassive !=null)
+////                        {
+////                            lat=LocationPassive.getLatitude();
+////                            lng=LocationPassive.getLongitude();
+////                        }
+////                        if(lat == 0 && lng == 0)
+////                        {
+////                            Toast.makeText(MainActivity.this, "Can't Get Your Location", Toast.LENGTH_SHORT).show();
+////                        }
+//                        fusedLocationClient.getLastLocation()
+//                                .addOnSuccessListener(this, new OnSuccessListener<Location>() {
+//                                    @Override
+//                                    public void onSuccess(Location location) {
+//                                        // Got last known location. In some rare situations this can be null.
+//                                        if (location != null) {
+//                                            // Logic to handle location object
+//                                        }
+//                                    }
+//                                });
+//                        else {
+//                            intent.putExtra("lat",lat);
+//                            intent.putExtra("lng",lng);
+//                            intent.putExtra("name","Your Location");
+//                            intent.putExtra("selected_types",selected_types);
+//                            intent.putExtra("checked",checked);
+//                            startActivity(intent);
+//                        }
+//                    }
+//                }
+//            }
+//        });
 
         /*
          * Initialize Places. For simplicity, the API key is hard-coded. In a production
@@ -284,5 +358,86 @@ public class MainActivity extends AppCompatActivity {
         a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(a);
 
+    }
+
+
+    private void fetchLocation() {
+        if (ContextCompat.checkSelfPermission(MainActivity.this,
+                Manifest.permission.ACCESS_COARSE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            // Permission is not granted
+            // Should we show an explanation?
+            if (ActivityCompat.shouldShowRequestPermissionRationale(MainActivity.this,
+                    Manifest.permission.ACCESS_COARSE_LOCATION)) {
+                new AlertDialog.Builder(this).setTitle("Location permission required").setMessage("Can't detect location without permission").setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        ActivityCompat.requestPermissions(MainActivity.this,
+                                new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
+                                1);
+                    }
+                }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                }).create().show();
+                // Show an explanation to the user *asynchronously* -- don't block
+                // this thread waiting for the user's response! After the user
+                // sees the explanation, try again to request the permission.
+            } else {
+                // No explanation needed; request the permission
+                ActivityCompat.requestPermissions(MainActivity.this,
+                        new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
+                        1);
+
+                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+            }
+        } else {
+            fusedLocationClient.requestLocationUpdates(locationRequest,
+                    locationCallback,
+                    Looper.getMainLooper());
+            fusedLocationClient.getLastLocation()
+                    .addOnSuccessListener(this, new OnSuccessListener<Location>() {
+                        @Override
+                        public void onSuccess(Location location) {
+                            // Got last known location. In some rare situations this can be null.
+                            if (location != null) {
+                                // Logic to handle location object
+                                lat = location.getLatitude();
+                                lng = location.getLongitude();
+                                final Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+
+                                intent.putExtra("lat", lat);
+                                intent.putExtra("lng", lng);
+                                intent.putExtra("name", "Your Location");
+                                intent.putExtra("selected_types", selected_types);
+                                intent.putExtra("checked", checked);
+                                startActivity(intent);
+
+                            }
+                            else{
+                                Toast.makeText(MainActivity.this, "Can't Get Your Location", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+            // Permission has already been granted
+        }
+
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if(requestCode == 1){
+            if (grantResults.length>0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+
+            }
+            else {
+
+            }
+        }
     }
 }
