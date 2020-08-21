@@ -1,0 +1,266 @@
+[
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_app_icon.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-hdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_power_settings_new_black_24dp.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable\\ic_power_settings_new_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_filter_list_blue.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\ic_filter_list_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_app_icon_round.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xhdpi\\app_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login_form.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\layout\\activity_login_form.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_app_icon_round.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-hdpi\\app_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_app_icon.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xxhdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\raw_style_json.json.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\raw\\style_json.json"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_app_icon_foreground.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xxxhdpi\\app_icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_app_icon.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-anydpi-v26\\app_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_filter_list_black_24dp.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\ic_filter_list_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_layout.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\layout\\list_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_background_edittext.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\background_edittext.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\layout\\activity_maps.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_app_icon_round.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-mdpi\\app_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_app_icon_round.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-anydpi-v26\\app_icon_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_place_details.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\layout\\activity_place_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_app_icon_foreground.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xhdpi\\app_icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_my_location_black_24dp.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable\\ic_my_location_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_filter_list_white_24dp.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\ic_filter_list_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_app_icon_round.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xxxhdpi\\app_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_app_icon_foreground.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-mdpi\\app_icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_signup_form.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\layout\\activity_signup_form.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_password.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\password.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_log_in.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\log_in.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_app_icon.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-mdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_my_location_white_24dp.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\ic_my_location_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logo_transp.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\logo_transp.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_user.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\user.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logo.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_app_icon.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xhdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_app_icon_foreground.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-hdpi\\app_icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bookmark.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\layout\\activity_bookmark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_user.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\layout\\activity_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_background_text_email.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\background_text_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_mail.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\mail.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_app_icon_round.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xxhdpi\\app_icon_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_bookmark_black_24dp.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable\\ic_bookmark_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background_splashscreen.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable\\background_splashscreen.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logoimagetransp.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\logoimagetransp.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_app_icon.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xxxhdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_add_user.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\add_user.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_app_icon_foreground.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xxhdpi\\app_icon_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button_rounded.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable\\button_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\layout_search_rec.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\layout\\search_rec.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_background_login.xml.flat",
+        "source": "C:\\Users\\Hirani\\Documents\\GitHub\\Clinnect\\clinnect1\\app\\src\\main\\res\\drawable-v24\\ic_launcher_background_login.xml"
+    }
+]

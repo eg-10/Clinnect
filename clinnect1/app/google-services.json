@@ -8,12 +8,49 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:79542207894:android:32ede0c48922add6bc09b7",
+        "android_client_info": {
+          "package_name": "com.bestcoolapps.clinnect1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79542207894-07vs21tfsqccdj6r2ak43tlhcdtog7h6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB_ftAad9GrvprtUzhS6FD0hzHbrIYNwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79542207894-07vs21tfsqccdj6r2ak43tlhcdtog7h6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:79542207894:android:1f709e4941a6dce3bc09b7",
         "android_client_info": {
           "package_name": "com.example.clinnect1"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "79542207894-8le9bt1df9m3uju7h2clv7sh26b77q3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.clinnect1",
+            "certificate_hash": "821c6415e5efd2496410dbffbad7964dbead1677"
+          }
+        },
         {
           "client_id": "79542207894-na0u5tlaobsge6ufd42t9dkksfl0qo3b.apps.googleusercontent.com",
           "client_type": 1,
